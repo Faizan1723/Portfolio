@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Md Faizan Ahmer</title>
+    <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/66adc50a18.js" crossorigin="anonymous"></script>
+</head>
+
+<body> 
+    <div id="header">
+        <div class="container">
+            <div id="navbar">
+                <nav>
+                    <img src="Images/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#acheivments">Acheivments</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-sharp fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+            </div>
+            <div class="header-text">
+                <p>Frontend Designer</p>
+                <h1>Hi, I'm Md. <span>Faizan</span><br>Ahmer From Kolkata, India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/personalPic.png" alt="Profile Pic.">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Md Faizan Ahmer, from Kolkata, India. I am a passionate and creative web developer with a keen interest in building user-friendly and responsive websites. I also have critical problem solving skills with good understanding of Data Structures and Algorithms. I am looking for internship opportunities to enhance my skills and to look forward in my career as a software Developer Engineer . </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Frontend development with good command of <em>HTML,<br>CSS, JavaScript</em>  along with sound knowledge of<br> <em>Bootstrap framework </em>and <em>jQuery library</em>.</li>
+                            <li><span>Problem Solving</span><br>100+ problems solved on <a href="https://leetcode.com/mdfaizanahmer6/"><span><u><em>Leetcode</em></span></u></a> & <a href="https://www.hackerrank.com/mdfaizanahmer6"><span><u><em>Hackerank</em></u></span></a> .</li>
+                            <li><span>Programming Languages</span><br>Have a strong hold in <em>C/C++</em> with sound knowledge<br>of <em>Java</em> and <em>Python</em></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025</span><br>B.Tech. Computer Science Engineering<br>Aliah University, NewTown Kolkata.</li>
+
+                            <li><span>2009-2020</span><br>1-12th<br>Kendriya Vidyalaya Fort William, Kolkata.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Development Intern at Let's Grow More</span><br>May 2023 - June 2023</li>
+                            <li><span>Web Development Intern at Sparks Foundation</span><br>May 2023 - June 2023</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/Images/work-1.png">
+                    <div class="layer">
+                        <h3>Weather Application</h3>
+                        <p>This weather application project fetches the temperature, humidity, and wind speed of the city entered by making API calls to openweather.com. You can visit the website or access the source code below.</p>
+                        <a href="https://github.com/Faizan1723/Weather-Application"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://faizan1723.github.io/Weather-Application/"><i class="fa-solid fa-globe"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/Images/work-2.png">
+                    <div class="layer">
+                        <h3>Simon Game</h3>
+                        <p>This is a simple memory game built to test your memory. It uses jQuery to implement the logical functions of the game. You can visit the website or access the source code below.</p>
+                        <a href="https://github.com/Faizan1723/Simon-Game"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://faizan1723.github.io/Simon-Game/"><i class="fa-solid fa-globe"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/Images/work-3.png">
+                    <div class="layer">
+                        <h3>Portfolio</h3>
+                        <p>Static personal resume website made for showcasing my skills and my projects.Tech used - HTML, CSS, Javascript, Bootstrap, mediaQuery. You can access the source code below.</p>
+                        <a href="https://github.com/Faizan1723/Portfolio"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="work-list">
+                <div class="work">
+                    <img src="/Images/work-5.png">
+                    <div class="layer">
+                        <h3>Banking Application</h3>
+                        <p>The source code contains a C++ program to run a banking system application. You can access the source code below.</p>
+                        <a href="https://github.com/Faizan1723/Banking-System"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/Images/work-4.png">
+                    <div class="layer">
+                        <h3>Drum Kit</h3>
+                        <p>This websites hosts a no. of musical instruments that are part of a drum kit. The buttons produce sounds similar to the instruments. The buttons are responsive to both clicks and keyboard press. You can visit the website or access the source code below.</p>
+                        <a href="https://github.com/Faizan1723/Drum-Kit"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://faizan1723.github.io/Drum-Kit/"><i class="fa-solid fa-globe"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/Images/work-5.png">
+                    <div class="layer">
+                        <h3>Scientific Calculator</h3>
+                        <p>The source code contains a C++ program to run both simple and scientific calculator application based on what you choose in the program. You can access the source code below.</p>
+                        <a href="https://github.com/Faizan1723/Menu-Based-Calculator"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Acheivments Section -->
+    <div id="acheivments">
+        <div class="container">
+            <h1 class="sub-title">Acheivments</h1>
+            <div class="acheivments-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>C++</h2>
+                    <p>Successfully completed the 'Learn C++ Programming -Beginner to Advance- Deep Dive in C++" course by Abdul Bari on Udemy...
+                    </p>
+                    <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-08760f39-c444-4a6d-9bd2-7a89519e0df1.pdf">View Certificate</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code-fork fa-rotate-180"></i>
+                    <h2>Data structures and Algorithms</h2>
+                    <p>Successfully completed the 'Mastering Data Structure & Algorithm using C and C++" course by Abdul Bari on Udemy...</p>
+                    <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-ea305a78-1e33-4a7f-b486-a1f2750607f8.jpg">View Certificate</a>
+                </div>
+                <!-- <div>
+                    <i class="fa-solid fa-palette"></i>
+                    <h2>Web Dev</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, sit eius. Aperiam labore dolorem ullam, eum a id expedita et?</p>
+                    <a href="#">Upcoming ...</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1  class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> mdfaizanahmer6@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 9073868538</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/Md-Faizan-Ahmer"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Faizan1723"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://leetcode.com/mdfaizanahmer6/" class="leet"><img src="Images/code.png" alt="" width="32" height="32"></a>
+                        <a href="https://www.hackerrank.com/mdfaizanahmer6"><i class="fa-brands fa-hackerrank"></i></a>
+                        <a href="https://www.instagram.com/mdfaizan957/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="Images/RESUME.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Made with ❤️ by Faizan.</p>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        window.onscroll = function() {myFunction()};
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            function myFunction() 
+            {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } 
+                else 
+                {
+                    navbar.classList.remove("sticky");
+                }                
+            }
+    </script>
+
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu()
+        {
+            sidemenu.style.right="0";
+        }
+        function closemenu()
+        {
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
